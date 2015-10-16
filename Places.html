@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Title of the Web Page-->
+		<title>Places: Melbourne Food Finder</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<!--Link to css stylesheet for app-->
+    	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    	<!--Link to style sheet-->
+    		<!--Custom style sheets need to go below the jQuery one in order for them to be applied properly-->
+    		
+    	<!--Link to the JQuery Framework-->
+    	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    	<!--Link to the JQuery Mobile Framework-->
+    	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body>
+		<!--Sets up page-->
+    	<div data-role="page" id="places" data-theme="a">
+	        <!--Header portion of page-->
+	        <div data-role="header">
+	     		<!--Page Header Title-->
+	            <h1>Places</h1>
+	            <!--Navigation Bar for website-->
+	            <nav data-role="navbar"> 
+	                <ul>
+	                    <li>
+	                    	<a href="index.html" rel="external">Home</a>
+	                    </li> 
+	                    <li>
+	                    	<a href="#" class="ui-btn-active">Places</a>
+	                    </li>
+	                    <li>
+	                    	<a href="#" rel="external">Favourites</a>
+	                    </li>
+	                    <li>
+	                    	<a href="#" rel="external">About</a>
+	                    </li> 
+	                </ul>
+            	</nav>
+	        </div>
+	        <!--Main body of page-->
+	        <div data-role="main" class="ui-content">
+	        	<!--List of Items-->
+	        	<!--Done as multiple collapsible lists-->
+	        	<!--Div containing all the lists-->
+
+	        	<!--Define Search Form-->
+	        	<form>
+				    <input data-type="search" id="searchForCollapsibleSetChildren">
+				</form>
+				<!--Define set to contain multiple collapsible lists-->
+	        	<div data-role="collapsible-set" data-filter="true" data-children="> 
+	        		div, > div div ul li" data-inset="true" id="collapsiblesetForFilterChildren" 
+	        		data-input="#searchForCollapsibleSetChildren">
+	        			<!--Sub Collapsible Set cotaining a section of the menu-->
+				        <div data-role="collapsible" 
+			          		data-filtertext="Search Filter Text: Group">
+					        	<!--Heading of list-->
+					        	<h4>Chinese
+					        		<!--Number of elements in the list-->
+					    			<span class="ui-li-count">5</span>
+					        	</h4>
+					        	<!--Sets up food list as an unordered list-->
+							    <ul data-role="listview" data-inset="true">
+							    	<!--Filter text for search bar in list tag-->
+					      			<li data-filtertext="Search Filter Text: Item">
+					      				<!--Food title-->
+						      			<a href="#entree_prawn_cutlets">
+						      				<!--Thumbnail of food-->
+						      				<img src="images/prawncutlets.jpg" class="ui-li-thumbnail">
+						      				Prawn Cutlets
+						      				<!--Food price-->
+						      				<span class="ui-li-count">$4.00</span>
+						      			</a>
+						      		</li>
+							      	<li data-filtertext="Search Filter Text: Item">
+							      		<a href="#entree_crab_claws">
+							      			<!--Thumbnail of food-->
+							      			<img src="images/crabclaws.jpg" class="ui-li-thumbnail">
+							      			Crab Claws
+							      			<span class="ui-li-count">$7.50</span>
+							      		</a>
+							      	</li>
+						      		<li data-filtertext="Search Filter Text: Item">
+						      			<a href="#entree_chicken_wings">
+						      				<!--Thumbnail of food-->
+						      				<img src="images/chickenwings.jpg" class="ui-li-thumbnail">
+						      				Chicken Wings
+						      				<span class="ui-li-count">$3.50</span>
+						      			</a>
+						      		</li>
+						      		<li data-filtertext="Search Filter Text: Item">
+						      			<a href="#entree_garlic_bread">
+						      				<!--Thumbnail of food-->
+						      				<img src="images/garlicbread.jpg" class="ui-li-thumbnail">
+						      				Garlic Bread
+						      				<span class="ui-li-count">$4.50</span>
+						      			</a>
+						      		</li>
+						      		<li data-filtertext="Search Filter Text: Item">
+						      			<a href="#entree_nachos">
+						      				<!--Thumbnail of food-->
+						      				<img src="images/nachos.jpg" class="ui-li-thumbnail">
+						      				Nachos
+						      				<span class="ui-li-count">$6.50</span>
+						      			</a>
+						      		</li>
+							    </ul>
+				        </div>
+				        <!--Sub Collapsible Set cotaining a section of the menu-->
+				        <div data-role="collapsible" 
+			          		data-filtertext="Search Filter Text: Group">
+					        	<!--Heading of list-->
+					        	<h4>Pizza
+					        		<!--Number of elements in the list-->
+					    			<span class="ui-li-count">4</span>
+					        	</h4>
+					        	<!--Sets up food list as an unordered list-->
+							    <ul data-role="listview" data-inset="true">
+							    	<!--Filter text for search bar in list tag-->
+							      	<li data-filtertext="Search Filter Text: Item">
+						       			<a href="#main_steak">
+						       				<!--Thumbnail of food-->
+						       				<img src="images/steak.jpg" class="ui-li-thumbnail">
+						       				Steak
+						       				<span class="ui-li-count">$20.00</span>
+						       			</a>
+						       		</li>
+						       		<li data-filtertext="Search Filter Text: Item">
+						       			<a href="#main_parma">
+						       				<!--Thumbnail of food-->
+						       				<img src="images/parma.jpg" class="ui-li-thumbnail">
+						       				Parma
+						       				<span class="ui-li-count">$15.00</span>
+						       			</a>
+						       		</li>
+						       		<li data-filtertext="Search Filter Text: Item">
+						       			<a href="#main_salmon">
+						       				<!--Thumbnail of food-->
+						       				<img src="images/salmon.jpg" class="ui-li-thumbnail">
+						       				Salmon
+						       				<span class="ui-li-count">$18.00</span>
+						       			</a>
+						       		</li>
+						       		<li data-filtertext="Search Filter Text: Item">
+						       			<a href="#main_burger_with_the_lot">
+						       				<!--Thumbnail of food-->
+						       				<img src="images/burgerwiththelot.jpg" class="ui-li-thumbnail">
+						       				Burger With The Lot
+						       				<span class="ui-li-count">$11.00</span>
+						       			</a>
+						       		</li>
+							    </ul>
+				        </div>
+        		</div>
+	        </div>
+	        <!--Footer portion of the page-->
+	        <div data-role="footer">
+	            <h2>&copy; Deakin University 2015</h2>
+	        </div>
+    	</div>
+	</body>
+</html>
