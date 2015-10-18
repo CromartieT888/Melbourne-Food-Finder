@@ -2678,7 +2678,23 @@
             	<p>Stylish Cambodian restaurant offering traditional dishes, banquet menus and takeaway options.</p>
             	<!--Order butons for food-->
             	<a href="#" 
-            		class="ui-btn ui-icon-plus ui-btn-icon-top" rel="external">Add to Favourites</a>
+            		class="ui-btn ui-icon-plus ui-btn-icon-top" rel="external">Add to Favourites
+					<script>
+					
+									
+					if (typeof(Storage) != "undefined") {   // Check browser support
+					localStorage.removeItem("restaurant");      // Store data  
+
+					} else {
+					document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+					}
+					
+					if (typeof(Storage) != "undefined") {   // Check browser support
+					localStorage.setItem("restaurant", "Bopha Devi Docklands");      // Store data    
+					} else {}
+					</script>
+					
+					</a>
             	<!--Click to call function-->
             		<!--///////////////////////////Change Below this line/////////////////////////////////-->
 	            <a href="tel:+61396001887 "
@@ -2783,7 +2799,21 @@
             	<p>Glass-walled restaurant with a heated outdoor terrace, for imaginative grills and sticky puddings.</p>
             	<!--Order butons for food-->
             	<a href="#" 
-            		class="ui-btn ui-icon-plus ui-btn-icon-top" rel="external">Add to Favourites</a>
+            		class="ui-btn ui-icon-plus ui-btn-icon-top" rel="external">Add to Favourites
+					
+					<script>
+					
+									
+					
+					
+					if (typeof(Storage) != "undefined") {   // Check browser support
+					localStorage.setItem("restaurant", "Steakhouse66");      // Store data    
+					} else {}
+					</script>
+					
+					</a>
+					
+					
             	<!--Click to call function-->
             		<!--///////////////////////////Change Below this line/////////////////////////////////-->
 	            <a href="tel:+61396400808 "

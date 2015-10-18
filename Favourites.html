@@ -47,24 +47,24 @@
 	            <h1>Favourite Places</h1>
 	            <p>No favourites have been added yet</p>
 				
-				Last Name : < <div id="result"></div> >
+				<br> Favourites  <div id="favourite"></div></br>
 				
 				<script>
 				
-				if (typeof(Storage) != "undefined") {   // Check browser support
-				localStorage.setItem("favourite", "Steakhouse66");      // Store data    
-				} else {}
+				
 				
 				if (typeof(Storage) != "undefined") {   // Check browser support
 
-				document.getElementById("result").innerHTML = localStorage.getItem("favourite");  // Retrieve data
+				document.getElementById("favourite").innerHTML = localStorage.getItem("restaurant");  // Retrieve data
 				} else {
-				document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+				document.getElementById("favourite").innerHTML = "Sorry, your browser does not support Web Storage...";
 				}
 				
-					var results = localStorage.getItem("favourite");
-					localStorage.setItem("favourite", results)
+					<!--var results = localStorage.getItem("favourite");
+					<!--localStorage.setItem("favourite", results)-->
 				</script>
+				
+				
 				
 	        </div>
 	        <!--Footer portion of the page-->
