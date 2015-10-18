@@ -16,25 +16,192 @@
     	
     	<!--Implement Google Maps API-->
     	<script src="http://maps.googleapis.com/maps/api/js"></script>
-		<!--Map Script for: The Beer and Burger-->
+		<!--Map Scripts-->
 		<script>
-			var myCenter=new google.maps.LatLng(-37.825368, 144.993629);
+			// Center points for each map
+			// Beer and Burger
+			var myCENTERbeerandburger=new google.maps.LatLng(-37.825368, 144.993629);/*Change A*/
+			// Topelz
+			var myCENTERtopelz=new google.maps.LatLng(-37.855768, 144.992776);/*Change A*/
+			// Maha
+			var myCENTERmaha=new google.maps.LatLng(-37.818222, 144.962764);/*Change A*/
+			// Hunky Dory
+			var myCENTERhunkydory=new google.maps.LatLng(-37.825311, 144.995872);/*Change A*/
+			// 57 Cafe Bar
+			var myCENTER57cafebar=new google.maps.LatLng(-37.890986, 145.144114);/*Change A*/
+			// Achelya
+			var myCENTERachelya=new google.maps.LatLng(-37.814248, 144.943046);/*Change A*/
+			// East Empress Chinese
+			var myCENTEReastempress=new google.maps.LatLng(-37.879251, 145.165864);/*Change A*/
+			// Munich Brauhaus
+			var myCENTERmunichbrauhaus=new google.maps.LatLng(-37.824076, 144.950932);/*Change A*/
+			// Sezar Restaurant
+			var myCENTERsezar=new google.maps.LatLng(-37.813475, 144.969324);/*Change A*/
+			// Eating House Restaurant
+			var myCENTEReatinghouse=new google.maps.LatLng(-37.928123, 145.252486);/*Change A*/
 			
 			function initialize()
 			{
-			var mapProp = {
-			  center:myCenter,
+			// Initialise map for Beer and Burger
+			//////////////////////////////////////////////////////////////////////////
+			var mapPROPbeerandburger = {/*Change B*/
+			  center:myCENTERbeerandburger,/*Change A*/
 			  zoom:15,
 			  mapTypeId:google.maps.MapTypeId.ROADMAP
 			  };
 			
-			var map=new google.maps.Map(document.getElementById("googleMap-beerandburger"),mapProp);
+			var MAPbeerandburger=new google.maps.Map(document.getElementById("googleMap-beerandburger"),mapPROPbeerandburger);/*Change B*//*Change C*//*Change D*/
 			
-			var marker=new google.maps.Marker({
-			  position:myCenter,
+			var MARKERbeerandburger=new google.maps.Marker({/*Change E*/
+			  position:myCENTERbeerandburger,/*Change A*/
 			  });
 			
-			marker.setMap(map);
+			MARKERbeerandburger.setMap(MAPbeerandburger);/*Change C*/
+			//////////////////////////////////////////////////////////////////////////
+			// Initialise map for Topelz
+			//////////////////////////////////////////////////////////////////////////
+			var mapPROPtopelz = {/*Change B*/
+			  center:myCENTERtopelz,/*Change A*/
+			  zoom:15,
+			  mapTypeId:google.maps.MapTypeId.ROADMAP
+			  };
+			
+			var MAPtopelz=new google.maps.Map(document.getElementById("googleMap-topelz"),mapPROPtopelz);/*Change B*//*Change C*//*Change D*/
+			
+			var MARKERtopelz=new google.maps.Marker({/*Change E*/
+			  position:myCENTERtopelz,/*Change A*/
+			  });
+			
+			MARKERtopelz.setMap(MAPtopelz);/*Change C*/
+			//////////////////////////////////////////////////////////////////////////
+			// Initialise map for Maha
+			//////////////////////////////////////////////////////////////////////////
+			var mapPROPmaha = {/*Change B*/
+			  center:myCENTERmaha,/*Change A*/
+			  zoom:15,
+			  mapTypeId:google.maps.MapTypeId.ROADMAP
+			  };
+			
+			var MAPmaha=new google.maps.Map(document.getElementById("googleMap-maha"),mapPROPmaha);/*Change B*//*Change C*//*Change D*/
+			
+			var MARKERmaha=new google.maps.Marker({/*Change E*/
+			  position:myCENTERmaha,/*Change A*/
+			  });
+			
+			MARKERmaha.setMap(MAPmaha);/*Change C*/
+			//////////////////////////////////////////////////////////////////////////
+			// Initialise map for Hunky Dory
+			//////////////////////////////////////////////////////////////////////////
+			var mapPROPhunkydory = {/*Change B*/
+			  center:myCENTERhunkydory,/*Change A*/
+			  zoom:15,
+			  mapTypeId:google.maps.MapTypeId.ROADMAP
+			  };
+			
+			var MAPhunkydory=new google.maps.Map(document.getElementById("googleMap-hunkydory"),mapPROPhunkydory);/*Change B*//*Change C*//*Change D*/
+			
+			var MARKERhunkydory=new google.maps.Marker({/*Change E*/
+			  position:myCENTERhunkydory,/*Change A*/
+			  });
+			
+			MARKERhunkydory.setMap(MAPhunkydory);/*Change C*/
+			//////////////////////////////////////////////////////////////////////////
+			// Initialise map for 57 Cafe Bar
+			//////////////////////////////////////////////////////////////////////////
+			var mapPROP57cafebar = {/*Change B*/
+			  center:myCENTER57cafebar,/*Change A*/
+			  zoom:15,
+			  mapTypeId:google.maps.MapTypeId.ROADMAP
+			  };
+			
+			var MAP57cafebar=new google.maps.Map(document.getElementById("googleMap-57cafebar"),mapPROP57cafebar);/*Change B*//*Change C*//*Change D*/
+			
+			var MARKER57cafebar=new google.maps.Marker({/*Change E*/
+			  position:myCENTER57cafebar,/*Change A*/
+			  });
+			
+			MARKER57cafebar.setMap(MAP57cafebar);/*Change C*/
+			//////////////////////////////////////////////////////////////////////////
+			// Initialise map for Achelya
+			//////////////////////////////////////////////////////////////////////////
+			var mapPROPachelya = {/*Change B*/
+			  center:myCENTERachelya,/*Change A*/
+			  zoom:15,
+			  mapTypeId:google.maps.MapTypeId.ROADMAP
+			  };
+			
+			var MAPachelya=new google.maps.Map(document.getElementById("googleMap-achelya"),mapPROPachelya);/*Change B*//*Change C*//*Change D*/
+			
+			var MARKERachelya=new google.maps.Marker({/*Change E*/
+			  position:myCENTERachelya,/*Change A*/
+			  });
+			
+			MARKERachelya.setMap(MAPachelya);/*Change C*/
+			//////////////////////////////////////////////////////////////////////////
+			// Initialise map for East Empress Chinese
+			//////////////////////////////////////////////////////////////////////////
+			var mapPROPeastempress = {/*Change B*/
+			  center:myCENTEReastempress,/*Change A*/
+			  zoom:15,
+			  mapTypeId:google.maps.MapTypeId.ROADMAP
+			  };
+			
+			var MAPeastempress=new google.maps.Map(document.getElementById("googleMap-eastempress"),mapPROPeastempress);/*Change B*//*Change C*//*Change D*/
+			
+			var MARKEReastempress=new google.maps.Marker({/*Change E*/
+			  position:myCENTEReastempress,/*Change A*/
+			  });
+			
+			MARKEReastempress.setMap(MAPeastempress);/*Change C*/
+			//////////////////////////////////////////////////////////////////////////
+			// Initialise map for Munich Brauhaus
+			//////////////////////////////////////////////////////////////////////////
+			var mapPROPmunichbrauhaus = {/*Change B*/
+			  center:myCENTERmunichbrauhaus,/*Change A*/
+			  zoom:15,
+			  mapTypeId:google.maps.MapTypeId.ROADMAP
+			  };
+			
+			var MAPmunichbrauhaus=new google.maps.Map(document.getElementById("googleMap-munichbrauhaus"),mapPROPmunichbrauhaus);/*Change B*//*Change C*//*Change D*/
+			
+			var MARKERmunichbrauhaus=new google.maps.Marker({/*Change E*/
+			  position:myCENTERmunichbrauhaus,/*Change A*/
+			  });
+			
+			MARKERmunichbrauhaus.setMap(MAPmunichbrauhaus);/*Change C*/
+			//////////////////////////////////////////////////////////////////////////
+			// Initialise map for Sezar Restaurant
+			//////////////////////////////////////////////////////////////////////////
+			var mapPROPsezar = {/*Change B*/
+			  center:myCENTERsezar,/*Change A*/
+			  zoom:15,
+			  mapTypeId:google.maps.MapTypeId.ROADMAP
+			  };
+			
+			var MAPsezar=new google.maps.Map(document.getElementById("googleMap-sezar"),mapPROPsezar);/*Change B*//*Change C*//*Change D*/
+			
+			var MARKERsezar=new google.maps.Marker({/*Change E*/
+			  position:myCENTERsezar,/*Change A*/
+			  });
+			
+			MARKERsezar.setMap(MAPsezar);/*Change C*/
+			//////////////////////////////////////////////////////////////////////////
+			// Initialise map for Eating House Restaurant
+			//////////////////////////////////////////////////////////////////////////
+			var mapPROPeatinghouse = {/*Change B*/
+			  center:myCENTEReatinghouse,/*Change A*/
+			  zoom:15,
+			  mapTypeId:google.maps.MapTypeId.ROADMAP
+			  };
+			
+			var MAPeatinghouse=new google.maps.Map(document.getElementById("googleMap-eatinghouse"),mapPROPeatinghouse);/*Change B*//*Change C*//*Change D*/
+			
+			var MARKEReatinghouse=new google.maps.Marker({/*Change E*/
+			  position:myCENTEReatinghouse,/*Change A*/
+			  });
+			
+			MARKEReatinghouse.setMap(MAPeatinghouse);/*Change C*/
+			//////////////////////////////////////////////////////////////////////////
 			}
 			
 			google.maps.event.addDomListener(window, 'load', initialize);
@@ -601,7 +768,7 @@
 	            <img src="images/img-topelz-large.jpg"  width="100%" height="250px">
 	            <!--Map View-->
 	            <h2>Location</h2>
-	            <div id="map_canvas_2" style="width:100%;height:300px;"></div>
+	            <div id="googleMap-topelz" style="width:100%;height:300px;"></div>
 	            <!--Address and Contact Details-->
 	            <h2>Contact Details</h2>
 	            <p><b>Address: </b>54 Chapel St, Windsor VIC 3181</p>
